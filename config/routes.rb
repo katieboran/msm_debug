@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   # READ
   get('/directors', { :controller => 'directors', :action => 'index' })
-  get('/directors/:id', { :controller => 'directors', :action => 'show' })
+  get('/directors/id', { :controller => 'directors', :action => 'show' })
 
   # UPDATE
   get('/directors/:id/edit_form', { :controller => 'directors', :action => 'edit_form' })
@@ -68,5 +68,9 @@ Rails.application.routes.draw do
 
   # DELETE
   get('/delete_actor/:id', { :controller => 'actors', :action => 'destroy' })
+
+
+  #issues: can't add a movie right now
+  #can't access "directors" tab
   #------------------------------
 end
